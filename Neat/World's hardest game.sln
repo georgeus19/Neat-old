@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.705
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "World's hardest game", "World's hardest game\World's hardest game.csproj", "{291DA09F-D843-4B86-A28F-D0EC9EAB447C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neat", "Neat\Neat.csproj", "{56207A74-8096-4543-B06C-757994238126}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorldsHardestGame_UnitTests", "WorldsHardestGame_UnitTests\WorldsHardestGame_UnitTests.csproj", "{D4ACC15A-9BAA-4AB6-A7CF-2B5D920489B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{291DA09F-D843-4B86-A28F-D0EC9EAB447C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{291DA09F-D843-4B86-A28F-D0EC9EAB447C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{291DA09F-D843-4B86-A28F-D0EC9EAB447C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{291DA09F-D843-4B86-A28F-D0EC9EAB447C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56207A74-8096-4543-B06C-757994238126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56207A74-8096-4543-B06C-757994238126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56207A74-8096-4543-B06C-757994238126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56207A74-8096-4543-B06C-757994238126}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4ACC15A-9BAA-4AB6-A7CF-2B5D920489B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4ACC15A-9BAA-4AB6-A7CF-2B5D920489B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4ACC15A-9BAA-4AB6-A7CF-2B5D920489B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4ACC15A-9BAA-4AB6-A7CF-2B5D920489B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F685E0E-EA94-4841-BD9E-A17420692E21}
+	EndGlobalSection
+EndGlobal

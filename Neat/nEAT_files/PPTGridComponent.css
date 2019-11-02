@@ -1,0 +1,260 @@
+.mock-grid-list-view-class {
+   position: absolute;
+   bottom: 10px;
+   top: 80px;
+   width: 70%;
+}
+
+.comments-enabled-class.mock-grid-list-view-class {
+   position: absolute;
+   top: 80px;
+   width: 100%;
+}
+
+.section-list-view-visible-class {
+   overflow-y: auto;
+   position: relative;
+   height: 100%;
+   padding: 3px;
+}
+
+.generic-view-class {
+   outline: none;
+}
+
+.generic-view-class * {
+   outline: none;
+}
+
+.section-view-visible-class {
+   font-family: SegoeUI-Semibold;
+   font-size: 14px;
+   color: #A8A8A8;
+   text-align: left;
+}
+
+.section-view-edit-title-class {
+   position: relative;
+   border: 0;
+   height: 30px;
+   padding-bottom: 4px;
+   background-color: transparent;
+   max-width: 280px;
+}
+ 
+.section-view-edit-title-class .section-view-title-span-class {
+   position: absolute;
+   top: 8px;
+   left: 0;
+   color: #9098a9;
+   transform-origin: 0 0;
+   transition: all 0.2s ease;
+   z-index: -1;
+   overflow: hidden;
+   max-width: 280px;
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+
+.section-view-edit-title-class .section-view-title-border-class {
+   position: absolute;
+   bottom: 10px;
+   left: 0;
+   height: 2px;
+   width: 100%;
+   background: #E86E58;
+   transform: scaleX(0);
+   transform-origin: 0 0;
+   transition: all 0.15s ease;
+}
+
+.section-view-edit-title-class .section-view-title-input-class {
+   position: absolute;
+   top: 0;
+   width: 100%;
+   border: 0;
+   background: none;
+   font-family: SegoeUI-Semibold;
+   font-size: 14px;
+   color: #A8A8A8;
+   transition: all 0.15s ease;
+}
+
+.section-view-edit-title-class .section-view-title-button-container-class {
+   position: absolute;
+   left: 300px;
+   display: flex;
+}
+
+.section-view-edit-title-class .section-view-title-update-button-class {
+   position: relative;
+}
+
+.section-view-edit-title-class .section-view-title-update-button-class {
+   position: relative;
+}
+
+.section-view-edit-title-class.section-view-title-expanded-class .section-view-title-input-class {
+   background: none;
+   outline: none;
+}
+
+.section-view-edit-title-class.section-view-title-expanded-class .section-view-title-span-class {
+   color: #E86E58;
+   transform: translateY(-26px);
+}
+
+.section-view-edit-title-class.section-view-title-expanded-class .section-view-title-border-class {
+   transform: scaleX(1);
+}
+
+.rtl-class .section-view-visible-class {
+   text-align: right;
+}
+
+.rtl-class.section-list-view-visible-class {
+   direction: rtl;
+}
+
+.grid-list-view-visible-class {
+   display: flex;
+   flex-flow: row;
+   flex-wrap: wrap;
+}
+
+.grid-frame-view-visible-class {
+   position: relative;
+   padding-right: 30px;
+   padding-bottom: 50px;
+}
+
+.grid-content-view-visible-class .grid-content-view-drag-over-div {
+   position: absolute;
+   top: 0;
+   right: 17px;
+   width: 0;
+   height: 75%;
+}
+
+.grid-content-view-visible-class .grid-content-view-drag-over-div.grid-content-view-drag-over-visual {
+   outline: 2px solid #E86E58;
+}
+
+.comments-enabled-class.grid-frame-view-visible-class {
+   position: relative;
+   width: 100%;
+   padding-right: 30px;
+   padding-bottom: 90px;
+}
+
+.grid-frame-view-slide-info-container-class {
+   position: absolute;
+   bottom: 35px;
+   height: 50px;
+   width: 965px;
+   background: rgb(255, 255, 255);
+   color: rgb(255, 255, 255);
+}
+
+.grid-frame-view-slide-index-container-class {
+   position: absolute;
+   bottom: 30px;
+   padding: 0px 5px 0px 5px;
+   font-family: SegoeUI;
+   font-size: 14px;
+   color: #A8A8A8;
+}
+
+.comments-enabled-class.grid-frame-view-slide-index-container-class {
+   position: absolute;
+   bottom: 8px;
+   padding: 0px 15px 0px 15px;
+   font-family: SegoeUI;
+   font-size: 30px;
+   color: rgb(124, 122, 122);
+}
+
+.grid-frame-view-num-comments-container-class {
+   position: absolute;
+   bottom: 12px;
+   right: 15px;
+   padding: 0px 5px 0px 5px;
+   font-family: SegoeUI;
+   font-size: 20px;
+   color: rgb(116, 113, 113);
+}
+
+.rtl-class .grid-frame-view-slide-index-container-class {
+   right: 30px;
+}
+
+.grid-content-view-visible-class {
+   width: 247px;
+   height: 140px;
+   outline: 1px solid #D2D2CE;
+}
+
+.comments-enabled-class.grid-content-view-visible-class {
+   width: 950px;
+   height: 140px;
+   outline: 1px solid #D2D2CE;
+}
+
+.grid-frame-view-visible-class:hover .grid-content-view-visible-class {
+   outline: 4px solid #B3B0AD;
+}
+
+.grid-content-view-visible-class:hover {
+   cursor: pointer;
+}
+
+.content-image-view-visible-class {
+   display: block;
+   line-height: 0;
+   width: 100%;
+   height: 100%;
+}
+
+.content-image-view-hidden-class {
+   display: none;
+}
+
+.content-image-view-visible-class img {
+   width: 100%;
+   height: 100%;
+}
+
+.grid-frame-view-visible-class.grid-frame-view-selected-class .grid-content-view-visible-class {
+   outline: 3px solid #E86E58;
+}
+
+.grid-frame-view-visible-class.grid-frame-view-selected-class:hover .grid-content-view-visible-class {
+   outline: 4px solid #E86E58;
+}
+
+.grid-frame-view-visible-class.grid-frame-view-selected-class .grid-frame-view-slide-index-container-class {
+   color: #E86E58;
+}
+
+.grid-frame-view-visible-class.grid-frame-view-active-focus-class .grid-content-view-visible-class {
+   outline: 3px solid #E86E58;
+}
+
+.grid-frame-view-visible-class.grid-frame-view-hidden-slide-class .grid-content-view-visible-class .content-image-view-visible-class {
+   opacity: 0.4;
+}
+
+.grid-frame-view-visible-class.grid-frame-view-hidden-slide-class .grid-frame-view-slide-index-container-class::after {
+   border-bottom: 1px solid;
+   -webkit-transform: rotate(20deg);
+   -ms-transform: rotate(20deg);
+   transform: rotate(20deg);
+   content: '';
+   width: 90%;
+   position: absolute;
+   top: 8px;
+   left: 1px;
+}
+
+/*# sourceMappingURL=PPTGridComponent.css.map*/

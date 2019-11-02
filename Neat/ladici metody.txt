@@ -1,0 +1,84 @@
+
+        private void CheckRefEq()
+        {
+            for (int i = 0; i < Population.Count; i++)
+            {
+                for (int j = 0; j < Population[i].Count; j++)
+                {
+                    for (int k = 0; k < Population.Count; k++)
+                    {
+                        for (int l = 0; l < Population[k].Count; l++)
+                        {
+                            if (i != k || j != l)
+                            {
+                                var g1 = Population[i][j];
+                                var g2 = Population[k][l];
+                                bool x = false;
+                                foreach (var item1 in g1.Genes)
+                                {
+                                    foreach (var item2 in g2.Genes)
+                                    {
+                                        if (ReferenceEquals(item1.Value, item2.Value))
+                                            x = true;
+                                    }
+                                }
+
+                                for (int q = 0; q < g1.Nodes.Count; q++)
+                                {
+                                    for (int w = 0; w < g2.Nodes.Count; w++)
+                                    {
+                                        if (ReferenceEquals(g1.Nodes[q], g2.Nodes[w]))
+                                            x = true;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private bool FindMistakeOfGenome(Genome genome)
+        {
+            foreach (var item in genome.Genes)
+            {
+                var gene = item.Value;
+                bool inFound = false;
+                bool outFound = false;
+                for (int i = 0; i < genome.Nodes.Count; i++)
+                {
+                    if (genome.Nodes[i].Number == gene.In.Number)
+                        inFound = true;
+                    if (genome.Nodes[i].Number == gene.Out.Number)
+                        outFound = true;
+                }
+                if (inFound == false || outFound == false)
+                    return true;
+            }
+            return false;
+        }
+
+        private bool SameGenome(Genome g1, Genome g2)
+        {
+            bool same = false;
+            var en1 = g1.Genes.GetEnumerator();
+            var en2 = g2.Genes.GetEnumerator();
+            for (int i = 0; i < g1.Genes.Count; i++)
+            {
+                en1.MoveNext();
+                en2.MoveNext();
+                if (en1.Current.Value.Weight != en2.Current.Value.Weight)
+                    return false;
+            }
+            return true;
+        }
+
+        private void SameGen(Genome genome, List<Genome> genomes)
+        {
+            for (int i = 0; i < genomes.Count; i++)
+            {
+
+                if (SameGenome(genome, genomes[i]))
+                    return;
+            }
+        }

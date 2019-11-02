@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- saved from url=(0282)https://a.lw.skype.com/Login/silent/MsaCallback?site_name=lw.skype.com&response_type=postmessage&client_id=580081&redirect_uri=https%3a%2f%2fpowerpoint.officeapps.live.com%2fpods%2fppt.aspx&state=silentloginsdk_1565771773305&partner=999&session_id=w5UEuA1zAiQ4DICQFC7Z&wa=wsignin1.0 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+
+    <title>Skype</title>
+
+    <script type="text/javascript" nonce="">
+        var message = "";
+
+        window.hashFragment = (function () {
+            "use strict";
+
+            return {
+                hashParams: {},
+
+                parseHashParams: function (windowObj) {
+                    var hash,
+                        hashPairs,
+                        hashPair,
+                        delimiterIndex,
+                        key,
+                        value,
+                        ind;
+
+                    windowObj = windowObj ? windowObj : window;
+                    hash = windowObj.location.hash.replace("#", "");
+                    this.hashParams = {};
+                    hashPairs = hash.split("&");
+                    for (ind in hashPairs) {
+                        hashPair = hashPairs[ind];
+                        delimiterIndex = hashPair.indexOf("=");
+                        if (delimiterIndex >= 0) {
+                            key = decodeURIComponent(hashPair.substring(0, delimiterIndex)).toLowerCase();
+                            value = decodeURIComponent(hashPair.substring(delimiterIndex + 1));
+                            this.hashParams[key] = value;
+                        }
+                    }
+                },
+                getHashParam: function (key) {
+                    return this.hashParams[key.toLowerCase()];
+                }
+            };
+        })();
+
+        (function () {
+            var target = "https://powerpoint.officeapps.live.com/pods/ppt.aspx",
+                messageObject = {"skypetoken":"eyJhbGciOiJSUzI1NiIsImtpZCI6IjEwMSIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1NjU3NzE3NzQsImV4cCI6MTU2NTg1ODE3NCwic2t5cGVpZCI6ImJtYmxobzIiLCJzY3AiOjk1OCwiY3NpIjoiMTU2NTc3MTc3NCIsImNpZCI6ImM1MjgwY2E5ODQ4NWI3ZTMiLCJhYXQiOjE1NjU3NjM0MjR9.O_KkKfmy5wOaxtGqbH92kqXtetfLFbDrtqBUI6BkVdRdXmTEpXw8F8sdixo9tb9WVYh_VpSrlcEZWgfahFgKBRrnxehXTxzy1Pg4HUVgbt-idNESTI7seFP6TYnUsSP2Lr5bZDHnERTfkTMid7ex7Q1NufM0uUVEo5fu8QgtECThNVe_rz_V_VD46T08_3Cib9EY8WFo_Cn_YeZGZHmVjWEEN6BZrjQmYhbtKiXyB99riJLNFfGZOxvCS7EkzLmSxmCmkv4GV_nl8xYRGWAokWZz1-IJ_JzOpy8ML0jOKUHeH96KG7B4GaLsRUAuHD3HoUtQ6D6LZPjD40Hz-sn0Bw","expires_in":"86399","skypeid":"bmblho2","signinname":"lamak1324@seznam.cz","state":"silentloginsdk_1565771773305"};
+
+            window.hashFragment.parseHashParams();
+            var error = window.hashFragment.getHashParam("error");
+            var errorDescription = window.hashFragment.getHashParam("error_description");
+
+            if (!!error && error.length) {
+                messageObject.error = error;
+                messageObject.error_description = errorDescription;
+            }
+            
+            var message = JSON.stringify(messageObject);
+
+            if (!!window.opener) {                              // Send postMessage from a Popup and close window
+                window.opener.postMessage(message, target);
+                window.close();
+            } else if (!!window.parent) {                       // Send postMessage from an Iframe
+                window.parent.postMessage(message, target);
+            }
+        }());
+    </script>
+</head>
+<body>
+
+</body></html>
