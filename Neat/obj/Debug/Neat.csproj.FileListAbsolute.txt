@@ -1,0 +1,6 @@
+C:\Users\Kryštof\source\repos\World's hardest game\Neat\bin\Debug\Neat.dll
+C:\Users\Kryštof\source\repos\World's hardest game\Neat\bin\Debug\Neat.pdb
+C:\Users\Kryštof\source\repos\World's hardest game\Neat\obj\Debug\Neat.csprojAssemblyReference.cache
+C:\Users\Kryštof\source\repos\World's hardest game\Neat\obj\Debug\Neat.csproj.CoreCompileInputs.cache
+C:\Users\Kryštof\source\repos\World's hardest game\Neat\obj\Debug\Neat.dll
+C:\Users\Kryštof\source\repos\World's hardest game\Neat\obj\Debug\Neat.pdb
